@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Elaborado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulário</h1>
+
+    <!-- 1° Form -->
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <!-- Caixa de Nome -->
+        <label for="caixaNome">Nome:</label>
+        <input type="text" id="caixaNome" maxlength="15" minlength="3" />
+
+        <br />
+        <br />
+
+        <!-- caixa de Endereço -->
+        <label for="caixaEndereco">Endereco:</label>
+        <input type="email" id="caixaEndereco" />
+
+        <br />
+        <br />
+
+        <!-- Caixa de Senha -->
+        <label for="caixaCidade">Cidade:</label>
+        <input type="text" id="caixaCidade" />
+
+        <br />
+        <br />
+
+        <!-- Caixa de Estado-->
+        <!-- Caixa de Seleção: várias opções -->
+        <label for="">Estado:</label>
+        <select name="" id="">
+          <option value="Brasilia" selected>Brasília</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Espírito Santo">Espírito Santo</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Salvador">Salvador</option>
+        </select>
+      </fieldset>
+    </form>
+    <br />
+    <br />
+
+    <!-- 2° Form -->
+    <form>
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <!-- Natureza do cargo -->
+        <label for="opacoCargo">Natureza do Cargo:</label>
+        <br />
+        <input type="radio" name="opacoCargo" value="cargo" /> Gerência
+        <input type="radio" name="opacoCargo" value="cargo" /> Financeiro
+        <input type="radio" name="opacoCargo" value="cargo" /> Recepção
+        <input type="radio" name="opacoCargo" value="cargo" /> Administrativo
+        <input type="radio" name="opacoCargo" value="cargo" /> Jurídico
+
+        <br />
+        <br />
+
+        <!-- Área de Interesse -->
+        <label for="areaInteresse">Área de Interesse</label>
+        <br />
+        <input type="checkbox" name="areaInteresse" value="area" /> Computação
+        <input type="checkbox" name="areaInteresse" value="area" /> Biologia
+        <input type="checkbox" name="areaInteresse" value="area" /> Meio
+        Ambiente
+        <input type="checkbox" name="areaInteresse" value="area" /> Engenharia
+        <input type="checkbox" name="areaInteresse" value="area" /> Históiria
+
+        <br />
+        <br />
+
+        <!-- Caixa de Mini Currículo -->
+        <label for="caixaTexto"> Mini Currículo: </label>
+        <textarea
+          name="text"
+          id="caixaTexto"
+          placeholder="Digite sua bio"
+          cols="30"
+          rows="5"
+        ></textarea>
+
+      </fieldset>
+    </form>
+
+    <!-- Botão para enviar o formulário-->
+    <input type="submit" value="Enviar" />
+
+    <!-- Reset de Informações -->
+    <input type="reset" value="Limpar" />
+  </body>
+</html>
